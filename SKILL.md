@@ -1,17 +1,11 @@
 ---
 name: responsibility-driven-crates
-description: Designs and revises Rust crate and workspace structure by grouping related responsibilities first, then considering extraction when a responsibility becomes independently meaningful. Use when deciding whether to add, split, merge, or name crates; reviewing workspace boundaries; or evaluating generic crate names such as core, common, shared, or utils.
+description: Use when designing, changing, or reviewing the structure or naming of Rust crates and workspaces.
 ---
 
 # Responsibility-Driven Crates
 
-Let crate boundaries follow responsibilities that actually exist in the project.
-
-Start with the smallest structure that clearly represents the current responsibilities.
-Keep responsibilities together while they evolve together.
-When one responsibility becomes independently meaningful, consider separating it into its own crate.
-
-The goal is a workspace whose crate boundaries explain the system rather than predict a hypothetical future architecture.
+Start with the smallest workspace structure that explains the project’s current responsibilities, including during a review with no proposed crate changes. Keep responsibilities together while they evolve together. Consider a separate crate when a responsibility becomes independently meaningful.
 
 ## Core rule
 
